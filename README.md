@@ -50,7 +50,7 @@ Action mapping - Behavioral patterns - Random Forest - Explanations - Validation
 
 ## Input Data Format
 
-Expected JSON structure:
+```Expected JSON structure:
 [
 {"user": "0x1234...","action""deposit",
 "amount": "1000.0",
@@ -58,7 +58,7 @@ Expected JSON structure:
 "token": "USDC"
 }
 ]
-
+```
 Supported action types: `deposit`, `borrow`, `repay`, `withdraw`, `liquidationcall`
 
 ## Feature Engineering
@@ -129,21 +129,11 @@ The system generates CSV output with:
 
 ## File Structure
 
-defi-credit-scoring/
-├── src/
-│ ├── data_processor.py # JSON ingestion & cleaning
-│ ├── feature_engineer.py # Feature extraction
-│ ├── model_trainer.py # ML model training
-│ ├── credit_scorer.py # Score generation
-│ └── main.py # Main execution script
-├── models/ # Trained model artifacts
-├── results/ # Generated scores & analysis
-├── requirements.txt # Dependencies
-├── README.md # This file
-└── analysis.md # Score distribution analysis
+<img width="529" height="384" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/ce7e3104-36b1-4b20-b52d-97328ee1b2f9" />
 
 
 ## Extension Points
+
 
 - **Additional Protocols**: Extend to Compound, MakerDAO
 - **Cross-chain Analysis**: Multi-blockchain scoring
@@ -159,18 +149,18 @@ defi-credit-scoring/
 5. Create Pull Request
 
 
-## How to Run
+# How to Run
 
-# Install dependencies
+## Install dependencies
 `pip install -r requirements.txt`
 
-# Run with sample data
+## Run with sample data
 `python src/main.py`
 
-# Or with your own data
+## Or with your own data
 `python src/main.py --input your_data.json --output results/scores.csv`
 
-# Force retraining
+## Force retraining
 `python src/main.py --retrain`
 
 
