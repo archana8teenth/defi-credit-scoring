@@ -31,7 +31,9 @@ Action mapping - Behavioral patterns - Random Forest - Explanations - Validation
 ### Installation
 
 ```git clone https://github.com/archana8teenth/defi-credit-scoring.git```
+
 ```cd defi-credit-scoring```
+
 ```pip install -r requirements.txt```
 
 ### Usage
